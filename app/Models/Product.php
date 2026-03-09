@@ -14,13 +14,13 @@ class Product extends Model
     protected $fillable = [
         'name',
         'slug',
+        'description',
+        'price',
         'category_id',
         'stock',
-        'price',
         'is_active',
         'image',
         'barcode',
-        'description',
     ];
 
     protected $appends = ['image_url'];
